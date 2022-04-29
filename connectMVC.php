@@ -54,15 +54,6 @@ function gol($data) {
     return mysqli_affected_rows($conn);
 }
 
-
-
-// function addGol($namaklub, $gol){
-//     global $conn;
-//     $totalGol = "SELECT jumlahGol FROM club WHERE namaClub='$namaklub'" + $gol;
-//     $query = "UPDATE club SET jumlahGol=$totalGol WHERE namaClub=$namaklub";
-//     mysqli_query($conn, $query);
-// }
-
 function add($data) {
     global $conn;
     $nama = htmlspecialchars($data["nama"]);
