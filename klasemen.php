@@ -1,7 +1,7 @@
 <?php
     require 'connectMVC.php';
     
-    $club = view("SELECT * FROM club ORDER BY jumlahSkor DESC");
+    $club = view("SELECT * FROM club ORDER BY jumlahSkor DESC,jumlahGol DESC");
 
 ?>
 

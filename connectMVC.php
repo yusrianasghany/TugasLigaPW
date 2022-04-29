@@ -1,5 +1,5 @@
 <?php
-    $conn = new mysqli('localhost', 'root', '', 'ligapw');
+    $conn = new mysqli('localhost', 'root', '1234anas', 'ligapw');
 
 function view($q) {
     global $conn;
@@ -27,28 +27,23 @@ function gol($data) {
     $gol2 = htmlspecialchars($data["gol2"]);
     $lawan1 = htmlspecialchars($data["lawan1"]);
     $lawan2 = htmlspecialchars($data["lawan2"]);
-    $totalGol1 = (int) "SELECT jumlahGol FROM club WHERE namaClub='$lawan1'" + $gol1;
-    $query1 = "UPDATE club SET jumlahGol='$totalGol1' WHERE namaClub='$lawan1'";
+
+    $query1 = "UPDATE club SET jumlahGol=jumlahGol+$gol1 WHERE namaClub='$lawan1'";
     mysqli_query($conn, $query1);
 
-    $totalGol2 = (int) "SELECT jumlahGol FROM club WHERE namaClub='$lawan2'" + $gol2;
-    $query2 = "UPDATE club SET jumlahGol='$totalGol2' WHERE namaClub='$lawan2'";
+    $query2 = "UPDATE club SET jumlahGol=jumlahGol+$gol2 WHERE namaClub='$lawan2'";
     mysqli_query($conn, $query2);
 
     if($gol1 > $gol2) {
-        $skorTambah = (int) "SELECT jumlahSkor FROM club WHERE namaClub='$lawan1'" + 3;
-        $query3 = "UPDATE club SET jumlahSkor='$skorTambah' WHERE namaClub='$lawan1'";
+        $query3 = "UPDATE club SET jumlahSkor=jumlahSkor+3 WHERE namaClub='$lawan1'";
         mysqli_query($conn, $query3);
     } else if ($gol1 == $gol2) {
-        $skorTambah1 = (int) "SELECT jumlahSkor FROM club WHERE namaClub='$lawan1'" + 1;
-        $skorTambah2 = (int) "SELECT jumlahSkor FROM club WHERE namaClub='$lawan2'" + 1;
-        $query3 = "UPDATE club SET jumlahSkor='$skorTambah1' WHERE namaClub='$lawan1'";
-        $query4 = "UPDATE club SET jumlahSkor='$skorTambah2' WHERE namaClub='$lawan2'";
+        $query3 = "UPDATE club SET jumlahSkor=jumlahSkor+1 WHERE namaClub='$lawan1'";
+        $query4 = "UPDATE club SET jumlahSkor=jumlahSkor+1 WHERE namaClub='$lawan2'";
         mysqli_query($conn, $query3);
         mysqli_query($conn, $query4);
     } else {
-        $skorTambah = (int) "SELECT jumlahSkor FROM club WHERE namaClub='$lawan2'" + 3;
-        $query3 = "UPDATE club SET jumlahSkor='$skorTambah' WHERE namaClub='$lawan2'";
+        $query3 = "UPDATE club SET jumlahSkor=jumlahSkor+3 WHERE namaClub='$lawan2'";
         mysqli_query($conn, $query3);
     }
 
@@ -67,7 +62,7 @@ function gol($data) {
 function add($data) {
     global $conn;
     $nama = htmlspecialchars($data["nama"]);
-    $query = "INSERT INTO club VALUES ('', '$nama', 0, 0)";
+    $query = "INSERT INTO club VALUES ('$nama', 0, 0)";
     mysqli_query($conn, $query);
 
     return mysqli_affected_rows($conn);
