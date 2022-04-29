@@ -34,6 +34,8 @@
     </table>
 
     <h1>Selamat kepada Klub <?= $row["namaClub"]; ?></h1>
+    <br>
+    <input type="button" value="Go Back" onclick="history.back(-1)" />
 
 
     
