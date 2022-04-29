@@ -64,7 +64,27 @@
         <?php $i++; }endforeach; ?>
     </table>
 
-    <br>
-    
+    <br><br>
+
+    <h1>Pertandingan yang selesai</h1>
+    <table border="1" cellpadding="10" cellspacing="0">
+        <tr>
+            <th>No.</th>
+            <th>Jadwal</th>
+            <th>Hasil</th>
+        </tr>    
+
+        <?php $i = 1; ?>
+        <?php foreach($jadwal as $row):
+            if($row["istanding"]==1){
+            ?>
+        <tr>
+            <td><?= $i; ?></td>
+            <td><?= $row["lawan1"];?> VS <?= $row["lawan2"];?></td>
+            <td><?= $row["gol1"];?> - <?= $row["gol2"];?></td>
+        </tr>
+        <?php $i++; }endforeach; ?>
+    </table>
+
 </body>
 </html>
