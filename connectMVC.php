@@ -3,7 +3,7 @@
 
 function add($data) {
     global $conn;
-    $nama = $data["nama"];
+    $nama = htmlspecialchars($data["nama"]);
     $query = "INSERT INTO club VALUES ('', '$nama', 0, 0)";
     mysqli_query($conn, $query);
 
