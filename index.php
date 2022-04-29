@@ -7,16 +7,16 @@
     <title>Sepak Bola Liga PW</title>
 </head>
 <body>
-    <h1>Silakan pilih apa yang Anda ingin lakukan</h1>
-
+    <div class="gradasi"></div>
+        <h1> LigaPW </h1> <br>
+        <h2> pilih kegiatan yang Anda ingin lakukan</h2>
+    </div>
     <ul>
-        <li><a href="input.php">Input data klub sepak bola</a></li>
-        <li><a href="jadwal.php">Input jadwal pertandingan sepak bola</a></li>
-        <li><a href="hasil.php">Input hasil skor pertandingan sepak bola</a></li>
-        <li><a href="klasemen.php">Menampilkan peringkat klasemen sementara</a></li>
-        <li><a href="juara.php">Menampilkan juara</a></li>
-
+        <a href="input.php"> Input data klub </a>
+        <a href="jadwal.php"> <span class="tab"> Input jadwal pertandingan </span></a>
+        <a href="hasil.php"> <span class="tab"> Input hasil pertandingan </span></a> <br> <br>
+        <a href="klasemen.php"> <span class="tab"> Peringkat klasemen sementara </span> </span> </a>
+        <a href="juara.php"><span class="tab"> Juara </span></a>
     </ul>
-    
 </body>
 </html>
