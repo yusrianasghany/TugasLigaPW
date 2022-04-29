@@ -27,11 +27,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Input Skor pertandingan</title>
+    <title>Input Skor Pertandingan</title>
 </head>
 <body>
 
-    <h1>Input Skor sepak bola</h1>
+    <h1>Input Skor Pertandingan Sepak Bola</h1>
 
     <table border="1" cellpadding="10" cellspacing="0">
         <tr>
