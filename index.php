@@ -14,7 +14,7 @@
         <li><a href="jadwal.php">Input jadwal pertandingan sepak bola</a></li>
         <li><a href="hasil.php">Input hasil skor pertandingan sepak bola</a></li>
         <li><a href="klasemen.php">Menampilkan peringkat klasemen sementara</a></li>
-        <li><a href="">Menampilkan juara</a></li>
+        <li><a href="juara.php">Menampilkan juara</a></li>
 
     </ul>
     
