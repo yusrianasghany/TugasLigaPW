@@ -1,35 +1,65 @@
 body {
-  background-color: rgb(237, 35, 122);
-  color: black;
+    background: linear-gradient(to bottom, #FCFFE7, #CE9461);
+    height: 650px;
+    width: 100%;
+    font-family: roboto;
+    color: rgb(177, 51, 51);
+  }
+
+.tab { 
+    display:inline-block; 
+    margin-left: 170px; 
 }
 
-h1 {
-  text-align: center;
-  font-size: 3vw;
+@font-face {
+    font-family: tulisan1;
+    src: url(font1.ttf);
 }
 
-h2 {
-  margin-top: 100px;
-  margin-left: 370px;
+@font-face {
+  font-family: tulisan2;
+  src: url(font2.otf);
 }
 
-ul {
-  margin-left: 370px;
-  list-style-type: none;
-  text-decoration: none;
-  margin-top: 55px;
+@font-face {
+    font-family: tulisan3;
+    src: url(font3.otf);
 }
 
-li {
-  margin-top: 20px;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-  font-size: 20px;
-}
-
-a:hover {
-  color: white;
-}
+  h1 {
+    padding-left: 2%;
+    text-align: center;
+    color : #de9f57;
+    font-family: 'tulisan1';
+	font-size: 5vw;
+	font-variant: inherit;
+  }
+  
+  h2{
+    padding-left: 2%;
+    text-align: center;
+    color : #31210eb6;
+    font-family: 'tulisan2';
+	font-size: 30pt;
+	font-variant: inherit;
+  }
+  
+  ul {
+    padding-left: 13%;
+    list-style-type: none;
+    text-decoration: none;
+    margin-top: 60px;
+    font-family: 'tulisan3';
+	font-size: 33pt;
+	font-variant: inherit;
+  }
+  
+  a {
+    text-decoration: none;
+    color: rgb(68, 41, 41);
+    font-size: 28px;
+  }
+  
+  a:hover {
+    color: whitesmoke;
+  }
