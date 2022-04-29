@@ -55,7 +55,7 @@
     <form action="" method="post">
         <label for="lawan1">Klub pertama</label>
         <input type="text" name="lawan1" id="lawan1" required>
-        <h3>VS</h3>
+        <h2> VS </h2>
         <label for="lawan2">Klub pertama</label>
         <input type="text" name="lawan2" id="lawan2" required>
         <br>
