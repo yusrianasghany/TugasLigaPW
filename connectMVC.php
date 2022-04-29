@@ -8,6 +8,7 @@ function view($q) {
     while($row = mysqli_fetch_assoc($result)) {
         $rows[] = $row;
     }
+    $tes = 10;
     return $rows;
 }
 
