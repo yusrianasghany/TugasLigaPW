@@ -14,6 +14,8 @@
         <li><a href="">Input jadwal pertandingan sepak bola</a></li>
         <li><a href="">Input hasil skor pertandingan sepak bola</a></li>
         <li><a href="">Menampilkan peringkat klasemen sementara</a></li>
+        <li><a href="">Menampilkan juara</a></li>
+
     </ul>
     
 
