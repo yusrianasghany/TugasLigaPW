@@ -7,14 +7,14 @@
         if(gol($_POST) > 0) {
             echo "
                 <script>
-                    alert('data berhasil ditambahkan');
-                    document.location.href = 'index.php'
+                alert('data berhasil ditambahkan');
+                document.location.href = 'index.php'
                 </script>
             ";
         } else {
             echo "
                 <script>
-                    alert('data gagal ditambahkan');
+                alert('data gagal ditambahkan');
                 </script>
             ";
         }
@@ -27,11 +27,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Input Skor Pertandingan</title>
+    <title>Input Skor pertandingan</title>
 </head>
 <body>
 
-    <h1>Input Skor Pertandingan Sepak Bola</h1>
+    <h1>Input Skor sepak bola</h1>
 
     <table border="1" cellpadding="10" cellspacing="0">
         <tr>
@@ -54,7 +54,7 @@
                     <input type="hidden" name="">
                     <input type="hidden" name="lawan1" value="<?= $row["lawan1"];?>">
                     <input type="hidden" name="lawan2" value="<?= $row["lawan2"];?>">
-                    <button type="submit">Submit</button>
+                    <button type="submit" name="submit">Submit</button>
                 </form>
             </td>
         </tr>
@@ -62,19 +62,6 @@
     </table>
 
     <br>
-
-    <!-- <h2>Masukkan jadwal pertandingan</h2>
-
-    <form action="" method="post">
-        <label for="lawan1">Klub pertama</label>
-        <input type="text" name="lawan1" id="lawan1" required>
-        <h3>VS</h3>
-        <label for="lawan2">Klub pertama</label>
-        <input type="text" name="lawan2" id="lawan2" required>
-        <br>
-        <br>
-        <button type="submit" name="submit">Add</button>
-    </form> -->
     
 </body>
 </html>
