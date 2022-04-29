@@ -36,6 +36,7 @@
     <input type="text" name="nama" id="nama" required>
     <br>
     <button type="submit" name="submit">Add</button>
+    <input type="button" value="Go Back" onclick="history.back(-1)" />
 </form>
     
 </body>
