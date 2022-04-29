@@ -1,3 +1,24 @@
+<?php
+    require 'connectMVC.php';
+    
+    if(isset($_POST["submit"])) {
+        if(add($_POST) > 0) {
+            echo "
+                <script>
+                    alert('data berhasil ditambahkan');
+                    document.location.href = 'index.php'
+                </script>
+            ";
+        } else {
+            echo "
+                <script>
+                    alert('data gagal ditambahkan');
+                </script>
+            ";
+        }
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,9 +32,10 @@
 <h1>Masukkan data klub sepak bola</h1>
 
 <form action="" method="post">
-    Nama Klub: <input type="text" name="nama">
+    <label for="nama">Nama Klub</label>
+    <input type="text" name="nama" id="nama" required>
     <br>
-    
+    <button type="submit" name="submit">Add</button>
 </form>
     
 </body>
