@@ -13,11 +13,10 @@
         <li><a href="input.php">Input data klub sepak bola</a></li>
         <li><a href="jadwal.php">Input jadwal pertandingan sepak bola</a></li>
         <li><a href="hasil.php">Input hasil skor pertandingan sepak bola</a></li>
-        <li><a href="">Menampilkan peringkat klasemen sementara</a></li>
+        <li><a href="klasemen.php">Menampilkan peringkat klasemen sementara</a></li>
         <li><a href="">Menampilkan juara</a></li>
 
     </ul>
     
-
 </body>
 </html>
