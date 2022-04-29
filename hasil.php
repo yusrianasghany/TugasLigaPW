@@ -41,7 +41,9 @@
         </tr>    
 
         <?php $i = 1; ?>
-        <?php foreach($jadwal as $row):?>
+        <?php foreach($jadwal as $row):
+            if($row["istanding"]==0){
+            ?>
         <tr>
             <td><?= $i; ?></td>
             <td><?= $row["lawan1"];?> VS <?= $row["lawan2"];?></td>
@@ -54,11 +56,12 @@
                     <input type="hidden" name="">
                     <input type="hidden" name="lawan1" value="<?= $row["lawan1"];?>">
                     <input type="hidden" name="lawan2" value="<?= $row["lawan2"];?>">
+                    <input type="hidden" name="id" value="<?= $row["id"];?>">
                     <button type="submit" name="submit">Submit</button>
                 </form>
             </td>
         </tr>
-        <?php $i++; endforeach; ?>
+        <?php $i++; }endforeach; ?>
     </table>
 
     <br>
