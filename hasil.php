@@ -82,7 +82,7 @@
         <tr>
             <td><?= $i; ?></td>
             <td><?= $row["lawan1"];?> VS <?= $row["lawan2"];?></td>
-            <td><?= $row["gol1"];?> - <?= $row["gol2"];?></td>
+            <td><?= $row["gol1"];?> — <?= $row["gol2"];?></td>
         </tr>
         <?php $i++; }endforeach; ?>
     </table>

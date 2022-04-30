@@ -57,7 +57,7 @@
         <label for="lawan1">Klub pertama</label>
         <input type="text" name="lawan1" id="lawan1" required>
         <h4> VS </h4>
-        <label for="lawan2">Klub pertama</label>
+        <label for="lawan2">Klub kedua</label>
         <input type="text" name="lawan2" id="lawan2" required>
         <br>
         <br>
