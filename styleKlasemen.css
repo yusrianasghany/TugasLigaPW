@@ -1,1 +1,34 @@
+body {
+    background: linear-gradient(to bottom, #D3E4CD, #E2C2B9);
+    height: 650px;
+    width: 100%;
+    font-family: 'tulisan1';
+	font-size: 15px;
+    font-weight: bold;
+	font-variant: inherit;
+    color: rgb(0, 0, 0); 
+  }
 
+  @font-face {
+    font-family: tulisan1;
+    src: url(font4.otf);
+  }
+
+  @font-face {
+    font-family: tulisan2;
+    src: url(font1.ttf);
+  }
+
+  h1 {
+    text-align: center;
+    color : #DEA057;
+    font-family: 'tulisan2';
+	  font-size: 40px;
+	  font-variant: inherit;
+  }
+
+  .button {
+    margin-top: 50px;
+    margin-left: 80%;
+    margin-right: 10px;
+  }
