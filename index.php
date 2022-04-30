@@ -9,14 +9,14 @@
 <body>
     <div class="gradasi"></div>
         <h1> LigaPW </h1> <br>
-        <h2> pilih kegiatan yang Anda ingin lakukan</h2>
+        <h2> Pilih kegiatan yang Anda ingin lakukan</h2>
     </div>
     <ul>
         <a href="input.php"> Input data klub </a>
         <a href="jadwal.php"> <span class="tab"> Input jadwal pertandingan </span></a>
-        <a href="hasil.php"> <span class="tab"> Input hasil pertandingan </span></a> <br> <br>
+        <a href="hasil.php"> <span class="tab"> Input skor pertandingan </span></a> <br> <br>
         <a href="klasemen.php"> <span class="tab"> Peringkat klasemen sementara </span> </span> </a>
-        <a href="juara.php"><span class="tab"> Juara </span></a>
+        <a href="juara.php"><span class="tab"> Show juara </span></a>
     </ul>
 </body>
 </html>
