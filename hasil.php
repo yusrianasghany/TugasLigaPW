@@ -85,6 +85,8 @@
         </tr>
         <?php $i++; }endforeach; ?>
     </table>
+    
+    <input type="button" value="Go Back" onclick="history.back(-1)" />
 
 </body>
 </html>
