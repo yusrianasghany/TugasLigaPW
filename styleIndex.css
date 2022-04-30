@@ -1,9 +1,13 @@
 body {
-    background: linear-gradient(to bottom, #FCFFE7, #CE9461);
+    background: linear-gradient(to bottom, #FEFBE7, #A0BCC2);
     height: 650px;
     width: 100%;
-    font-family: roboto;
-    color: rgb(177, 51, 51);
+    font-family: 'tulisan2';
+	font-size: 15px;
+    font-weight: bold;
+	font-variant: inherit;
+    color: rgb(0, 0, 0);
+    
   }
 
 .tab { 
@@ -15,21 +19,15 @@ body {
     font-family: tulisan1;
     src: url(font1.ttf);
 }
-
 @font-face {
-  font-family: tulisan2;
-  src: url(font2.otf);
-}
-
-@font-face {
-    font-family: tulisan3;
-    src: url(font3.otf);
-}
-
+    font-family: tulisan2;
+    src: url(font4.otf);
+  }
+  
   h1 {
     padding-left: 2%;
     text-align: center;
-    color : #de9f57;
+    color : #d1b878;
     font-family: 'tulisan1';
 	font-size: 5vw;
 	font-variant: inherit;
@@ -38,28 +36,25 @@ body {
   h2{
     padding-left: 2%;
     text-align: center;
-    color : #31210eb6;
-    font-family: 'tulisan2';
-	font-size: 30pt;
-	font-variant: inherit;
+    color : #31210e;
+	font-size: 25pt;
   }
   
   ul {
-    padding-left: 13%;
+    padding-left: 10%;
     list-style-type: none;
     text-decoration: none;
     margin-top: 60px;
-    font-family: 'tulisan3';
 	font-size: 33pt;
-	font-variant: inherit;
   }
   
   a {
     text-decoration: none;
-    color: rgb(68, 41, 41);
-    font-size: 28px;
+    color: rgb(0, 0, 0);
+    font-size: 27px;
   }
   
   a:hover {
-    color: whitesmoke;
+    color: #d1b878;
   }
+
