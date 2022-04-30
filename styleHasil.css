@@ -1,12 +1,5 @@
 body {
-<<<<<<< HEAD
     background: linear-gradient(to bottom, #F2F5C8, #219F94);
-    height: 1000px;
-=======
-    background: linear-gradient(to bottom, #F4FCD9, #534340);
-    height: 1000%;
->>>>>>> 61f7ad2c3f72135c2bce25ba28b592703637d918
-    width: 100%;
     font-family: 'tulisan2';
 	  font-size: 15px;
     font-weight: bold;

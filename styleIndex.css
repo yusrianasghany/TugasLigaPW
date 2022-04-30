@@ -3,12 +3,12 @@ body {
     height: 650px;
     width: 100%;
     font-family: 'tulisan2';
-	font-size: 15px;
+	  font-size: 15px;
     font-weight: bold;
-	font-variant: inherit;
+	  font-variant: inherit;
     color: rgb(0, 0, 0);
     
-  }
+}
 
 .tab { 
     display:inline-block; 
