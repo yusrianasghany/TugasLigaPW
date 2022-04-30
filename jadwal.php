@@ -27,13 +27,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleJadwal.css">
     <title>Jadwal Klub</title>
 </head>
 <body>
+    <h3>Daftar Club sepak bola</h1>
 
-    <h1>Daftar Club sepak bola</h1>
-
-    <table border="1" cellpadding="10" cellspacing="0">
+    <table border="1" cellpadding="12" cellspacing="0">
         <tr>
             <th>No.</th>
             <th>Nama Klub</th>
@@ -52,10 +52,11 @@
 
     <h2>Masukkan jadwal pertandingan</h2>
 
+
     <form action="" method="post">
         <label for="lawan1">Klub pertama</label>
         <input type="text" name="lawan1" id="lawan1" required>
-        <h2> VS </h2>
+        <h4> VS </h4>
         <label for="lawan2">Klub pertama</label>
         <input type="text" name="lawan2" id="lawan2" required>
         <br>
