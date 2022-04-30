@@ -1,11 +1,11 @@
 body {
-    background: linear-gradient(to bottom, #F4FCD9, #534340);
-    height: 650px;
+    background: linear-gradient(to bottom, #F2F5C8, #219F94);
+    height: 1000px;
     width: 100%;
     font-family: 'tulisan2';
-	font-size: 15px;
+	  font-size: 15px;
     font-weight: bold;
-	font-variant: inherit;
+	  font-variant: inherit;
     color: rgb(0, 0, 0); 
   }
 
