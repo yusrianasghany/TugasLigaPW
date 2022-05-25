@@ -1,5 +1,5 @@
 <?php
-    $conn = new mysqli('localhost', 'root', '1234anas', 'ligapw');
+    $conn = new mysqli('localhost', 'root', '', 'ligapw');
 
 function view($q) {
     global $conn;
